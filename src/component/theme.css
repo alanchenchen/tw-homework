@@ -1,0 +1,36 @@
+.button {
+    padding: 5px 10px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+}
+.icon-btn {
+    padding: 5px;
+    font-size: 18px !important;
+    color: #fff;
+}
+.badge {
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.blue {
+    background-color: #00bccf;
+}
+.dark-blue {
+    background-color: #01869a;
+}
+.black {
+    background-color: #435466;
+}
+.dark-black {
+    background-color: #2d4054;
+}
+.gray {
+    background-color: #f3f3f3;
+}
+.dark-gray {
+    background-color: #e1e4e6;
+}

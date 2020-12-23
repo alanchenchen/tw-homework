@@ -1,0 +1,70 @@
+/*
+* index页面的css文件
+*/
+
+/* head */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+.head .user {
+    position: relative;
+}
+.head .user-info {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.head .user-info .thumble {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+.head .user-info .icon-angle-down {
+    color: #666666 !important;
+    font-size: 20px !important;
+}
+.head .user-action {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    right: -10px;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+}
+.head .user-action li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 20px;
+}
+.head .user-action li:hover {
+    background: #efefef;
+}
+.head .user-action li i {
+    margin-right: 15px;
+}
+.head .user-action li span {
+    white-space: pre;
+}
+.head .menu-switch {
+    cursor: pointer;
+}
+
+/* body */
+.body .left-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
