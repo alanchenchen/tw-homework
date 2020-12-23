@@ -20,12 +20,20 @@ const toggleUserAction = () => {
     }
 }
 
+const toggleLeftMenu = (status) => {
+    if ($(".menu-switch").css("opacity") === "1") {
+        if (status) {
+            $(".left-menu").css({ left: "0" });
+        } else {
+            $(".left-menu").css({ left: "-100%" });
+        }
+    }
+}
+
 $(".user-info").on("click", (e) => {
     toggleUserAction();
 });
-$(".user-info").on("mouseenter", (e) => {
-    toggleUserAction();
-});
-$(".user-info").on("mouseleave", (e) => {
-    toggleUserAction();
+
+$(".menu-switch").on("click", (e) => {
+    toggleLeftMenu(true);
 });

@@ -7,7 +7,12 @@
       position: absolute;
       top: 0;
       left: -100%;
+      z-index: 999;
+      max-width: 45vw;
       height: 100vh;
+    }
+    .left-menu .menu-item span {
+      font-size: 12px !important;
     }
     .footer {
       display: none;
@@ -23,6 +28,8 @@
       position: absolute;
       top: 0;
       left: -100%;
+      z-index: 999;
+      max-width: 33vw;
       height: 100vh;
     }
   }
@@ -41,6 +48,7 @@
        height: 30px;
        line-height: 30px;
        text-align: center;
+       font-size: 14px;
        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
      }
 
@@ -55,7 +63,7 @@
         opacity: 0;
     }
     .body {
-      padding-left: 20%;
-      padding-right: 20%;
+      padding-left: 5%;
+      padding-right: 5%;
     }
   }
