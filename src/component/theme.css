@@ -34,3 +34,10 @@
 .dark-gray {
     background-color: #e1e4e6;
 }
+
+.warning {
+    background-color: #ff9a2a;
+}
+.success {
+    background-color: #7fbc39;
+}
