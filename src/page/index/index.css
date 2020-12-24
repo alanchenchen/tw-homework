@@ -2,6 +2,10 @@
 * index页面的css文件
 */
 
+body {
+    background-color: #f7f7f7;
+}
+
 /* head */
 .head {
     display: flex;
@@ -9,6 +13,7 @@
     align-items: center;
     padding: 15px 20px;
     box-sizing: border-box;
+    background-color: #fff;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 .head .user {
@@ -85,6 +90,10 @@
 .body .left-menu .menu-item:hover .default-color {
     color: #00b4cf;
 }
+.body .left-menu .menu-item i {
+    margin-top: 2px;
+    font-size: 20px;
+}
 .body .left-menu .menu-item span {
     margin-left: 5px;
     font-size: 14px;
@@ -132,6 +141,17 @@
     width: 31.333%;
     position: relative;
 }
+.body .main .top .card {
+    padding: 1% 1% 2%;
+}
+.main .top .card i {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 144px;
+    color: rgba(255, 255, 255, .2);
+}
 .main .top .card .label {
     margin-bottom: 9%;
     text-align: left;
@@ -146,7 +166,77 @@
 }
 .body .main .top .summary {
     float: left;
-    width: 30%;
+    width: 31.333%;
     background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+    padding: 2% 1% 2.5%;
+}
+.main .top .summary li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary li .label {
+    margin-bottom: 34%;
+    font-size: 12px;
+    color: #666;
+}
+.summary li .number {
+    margin-bottom: 15%;
+    font-size: 20px;
+}
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .15);
+}
+.tools .left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.tools .left .tab {
+    display: flex;
+}
+.tools .tab li {
+    box-sizing: border-box;
+    padding: 0 30px;
+    height: 50px;
+    line-height: 50px;
+}
+.tools .tab li:nth-of-type(1) {
+    border-bottom: 3px solid #00b4cf;
+}
+.tools .tab li {
+    border-right: 1px solid#f3f3f3;
+}
+.tools .search {
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    margin-left: 20px;
+    background-color: #d8d8d8;
+}
+.tools .search i {
+    color: #999;
+    font-size: 20px;
+}
+.tools .search input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 110px;
+}
+.tools .right {
+    display: flex;
+    align-items: center;
+}
+.tools .right li {
+    margin-right: 15px;
+    font-size: 20px;
+}
+.tools .right li:last-child {
+    color: #00b4cf;
 }

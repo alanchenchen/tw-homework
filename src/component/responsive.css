@@ -17,6 +17,10 @@
     .footer {
       display: none;
     }
+    .main .top .card i {
+      top: 3% !important;
+      font-size: 70px !important;
+    }
   }
   
   /* tablet portrait */
@@ -78,15 +82,5 @@
       flex: 0 0 82%;
       max-width: 82%;
     }
-    .body .main .top .card {
-      padding: 1% 1% 1.6%;
-  }
-    .main .top .card i {
-      position: absolute;
-      top: -4%;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 144px;
-      color: rgba(255, 255, 255, .2);
-    }
+    
   }

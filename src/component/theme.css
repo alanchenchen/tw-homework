@@ -41,3 +41,17 @@
 .success {
     background-color: #7fbc39;
 }
+
+@keyframes customRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateIcon {
+    animation: customRotate 2s infinite;
+    left: 30% !important
+}
