@@ -5,14 +5,12 @@
     line-height: 30px;
     color: #fff;
 }
-.icon-btn {
-    padding: 5px;
-    font-size: 18px !important;
+.badge-icon {
+    padding: 3px 5px;
     color: #fff;
 }
 .badge {
-    padding: 2px 5px;
-    font-size: 14px;
+    padding: 2px 7px;
     color: #fff;
 }
 

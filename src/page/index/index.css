@@ -128,6 +128,8 @@ body {
 /* body main */
 .body .main {
     padding: 10px 0 10px 3%;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
 }
 .body .main .top {
     overflow: hidden;
@@ -146,7 +148,7 @@ body {
 }
 .main .top .card i {
     position: absolute;
-    top: -15%;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 144px;
@@ -239,4 +241,172 @@ body {
 }
 .tools .right li:last-child {
     color: #00b4cf;
+}
+.main .task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.task-list .task-item {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 10px;
+    margin-bottom: 14px;
+}
+.task-list .task-item .os-icon {
+    margin-right: 20px;
+}
+.task-list .task-item .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.task-item .detail .info {
+    display: flex;
+    align-items: center;
+}
+.detail .info i {
+    font-size: 16px;
+    color: #999;
+}
+.detail .info span {
+    font-size: 14px;
+}
+.detail .info .domain {
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #00b4cf;
+    font-weight: bolder;
+}
+.detail .info .tag-badge {
+    margin-right: 10%;
+}
+.detail .info .ip {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.detail .info .file {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.detail .interact {
+    display: flex;
+    justify-content: space-between;
+}
+.detail .tag-list {
+    display: flex;
+    align-items: center;
+}
+.detail .tag-list .add-btn {
+    font-size: 16px;
+    cursor: pointer;
+}
+.tag-list .tag {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    padding: 3px 8px;
+    background-color: #efefef;
+}
+.tag-list .tag .tag-delete {
+    font-size: 16px;
+    cursor: pointer;
+}
+.tag-list .tag span {
+    margin-right: 8px;
+    font-size: 14px;
+}
+.interact .deny-btn {
+    display: flex;
+    align-items: center;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+.interact .deny-btn i {
+    font-size: 16px;
+    color: #fff;
+}
+.interact .deny-btn span {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* popup */
+.popup {
+    position: fixed;
+    z-index: 9999;
+    width: 570px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    border: 1px solid #00b4cf;
+    padding: 28px 12px 15px;
+}
+.popup::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -16px;;
+    left: 21px;
+    z-index: 12;
+    border-bottom: 8px solid #FFFFFF;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+.popup::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -18px;;
+    left: 20px;
+    z-index: 10;
+    border-bottom: 9px solid #00b4cf;
+    border-top: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+}
+.popup .popup-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 20px;
+    color: #00b4cf;
+    cursor: pointer;
+}
+.popup .desc {
+    margin-bottom: 15px;
+    color: #666;
+}
+.popup .popup-input {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 1em;
+    color: #00b4cf;
+}
+.popup .button-list {
+    display: flex;
+}
+.popup .popup-add {
+    margin-right: 20px;
+    padding: 6px 15px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.popup .popup-cancel {
+    padding: 6px 40px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
 }
